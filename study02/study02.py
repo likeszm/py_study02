@@ -1,13 +1,15 @@
 #py学习记录02
 """
 收获:
-1。函数的声明和调用,以及函数名就是函数地址
+1.函数的声明和调用,以及函数名就是函数地址
 2.函数的返回值和参数,以及空返回值None
 3.函数的参数的缺省值/默认值
 4.函数参数原来可以用指定的方式填值!!!
-5。全局变量在函数内只能访问不能更改!!!   （除非加上global关键字指定是全局的那一个）
+5.全局变量在函数内只能访问不能更改!!!   （除非加上global关键字指定是全局的那一个）
 6.py有一些常用的内置函数
 7.py类型转换不能一次转两步,比如不可以这样 int('123.4')
+感谢:
+https://www.byhy.net/prac/pub/py/0005/
 """
 
 
@@ -131,4 +133,15 @@ def test_fun_10():
 temp = test_fun_10()
 print( "return of fun = " + str( temp ) )
 print( "type of return = " + str( type(temp) ) )
+"""
+
+#练习
+"""
+def get_name_and_age(str_1 = 'NULL', str_2 = -1):
+    name = str_1[-2:]
+    age = str_2[-2:]
+    ret = name + ":" + age
+    return ret
+
+print( get_name_and_age("他的名字是小林","他的年龄是17") )
 """
